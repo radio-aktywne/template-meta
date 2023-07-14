@@ -68,7 +68,6 @@ tasks:
         --overwrite
         --defaults
         --vcs-ref HEAD
-        --data 'username=radio-aktywne'
         --data 'templatename=template'
         --data 'description=Template'
         {{ .CLI_ARGS }}
@@ -93,13 +92,13 @@ tasks:
         config
         --local
         user.name
-        'radio-aktywne'
+        'test'
       - >
         git
         config
         --local
         user.email
-        'radio-aktywne <radio-aktywne@mail.spietras.dev>'
+        'test@example.org'
       - >
         git
         commit
