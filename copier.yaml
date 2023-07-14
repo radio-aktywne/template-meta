@@ -1,0 +1,15 @@
+---
+# Questions
+
+templatename:
+  type: str
+  help: The name of your template
+
+description:
+  type: str
+  help: A short description of your template
+
+# Configuration
+
+_subdirectory: src
+_answers_file: .copier-answers.yaml
