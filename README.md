@@ -35,7 +35,7 @@ copier gh:radio-aktywne/template-meta .
 - formatting and linting with [`Trunk`](https://trunk.io)
 - continuous integration with [`GitHub Actions`](https://github.com/features/actions)
 
-## 💻 Contributing and Development
+## 💻 Development
 
-Read more about how to contribute and develop the project
+Read more about how to develop the project
 [here](https://github.com/radio-aktywne/template-meta/blob/main/CONTRIBUTING.md).
