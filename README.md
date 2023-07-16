@@ -25,16 +25,6 @@ make sure you have [`copier`](https://copier.readthedocs.io) installed and run:
 copier gh:radio-aktywne/template-meta .
 ```
 
-## 🚀 Features
-
-- fully reproducible development environments with
-  [`Dev Containers`](https://code.visualstudio.com/docs/remote/containers)
-  and [`Nix`](https://nixos.org)
-- automatic environment activation with [`direnv`](https://direnv.net)
-- running tasks with [`Task`](https://taskfile.dev)
-- formatting and linting with [`Trunk`](https://trunk.io)
-- continuous integration with [`GitHub Actions`](https://github.com/features/actions)
-
 ## 💻 Development
 
 Read more about how to develop the project
