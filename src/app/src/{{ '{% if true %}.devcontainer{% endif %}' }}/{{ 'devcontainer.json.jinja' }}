@@ -69,14 +69,10 @@
         "jnoortheen.nix-ide",
         // Improved Markdown preview
         "bierner.github-markdown-preview",
+        {%- if docs %}
         // SVG preview
         "jock.svg",
-        // Jinja templates
-        "samuelcolvin.jinjahtml",
-        // Python for tests
-        "ms-python.python",
-        // TOML
-        "tamasfe.even-better-toml",
+        {%- endif %}
         // GitLens
         "eamodio.gitlens",
         // GitHub Copilot
