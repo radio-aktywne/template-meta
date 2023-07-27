@@ -1,15 +1,43 @@
 ---
 # Questions
 
+type:
+  type: str
+  help: The type of the template
+  choices:
+    - generic
+    - app
+  default: generic
+
+accountname:
+  type: str
+  help: The name of the organization on GitHub
+  default: radio-aktywne
+
 templatename:
   type: str
-  help: The name of your template
+  help: The name of the template
 
 description:
   type: str
-  help: A short description of your template
+  help: A short description of the template
+
+reponame:
+  type: str
+  help: The name of the repository
+  default: |-
+    {% if type == "generic" -%}
+      template-{{ templatename }}
+    {%- elif type == "app" -%}
+      template-app-{{ templatename }}
+    {%- endif %}
+
+repourl:
+  type: str
+  help: The URL of the repository
+  default: "https://github.com/{{ accountname }}/{{ reponame }}"
 
 # Configuration
 
-_subdirectory: src
+_subdirectory: "src/{{ type }}"
 _answers_file: .copier-answers.yaml

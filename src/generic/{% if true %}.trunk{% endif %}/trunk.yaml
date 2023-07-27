@@ -21,6 +21,8 @@ lint:
       paths:
         # Ignore jinja files
         - "**/*.jinja*"
+        # Ignore copier answers file
+        - "**/.copier-answers.yaml"
   definitions:
     # Nix formatting check (local)
     - name: nix-fmt-check
