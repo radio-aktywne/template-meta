@@ -14,7 +14,7 @@ def data() -> dict[str, str]:
         "accountname": "radio-aktywne",
         "packagename": "foo",
         "description": "Example package",
-        "reponame": "foo",
+        "reponame": "package-foo",
         "repourl": "https://github.com/radio-aktywne/package-foo",
         "docs": "true",
         "docsurl": "https://radio-aktywne.github.io/package-foo",
