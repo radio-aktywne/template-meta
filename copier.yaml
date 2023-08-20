@@ -7,6 +7,7 @@ type:
   choices:
     - generic
     - app
+    - package
   default: generic
 
 accountname:
@@ -30,6 +31,8 @@ reponame:
       template-{{ templatename }}
     {%- elif type == "app" -%}
       template-app-{{ templatename }}
+    {%- elif type == "package" -%}
+      template-package-{{ templatename }}
     {%- endif %}
 
 repourl:
