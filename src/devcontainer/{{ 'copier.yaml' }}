@@ -1,0 +1,58 @@
+---
+# Questions
+
+accountname:
+  type: str
+  help: The name of the organization on GitHub
+  default: radio-aktywne
+
+containername:
+  type: str
+  help: The name of the devcontainer
+
+description:
+  type: str
+  help: A short description of the devcontainer
+
+reponame:
+  type: str
+  help: The name of the repository
+  default: "devcontainer-{{ containername }}"
+
+repourl:
+  type: str
+  help: The URL of the repository
+  default: "https://github.com/{{ accountname }}/{{ reponame }}"
+
+docs:
+  type: bool
+  help: Whether to include a documentation site for the devcontainer
+  default: true
+
+docsurl:
+  type: str
+  help: The URL of the documentation site for the devcontainer
+  default: "https://{{ accountname }}.github.io/{{ reponame }}"
+  when: "{{ docs }}"
+
+releases:
+  type: bool
+  help: Whether you plan to make releases
+  default: true
+
+registry:
+  type: bool
+  help: Whether you want to publish Docker images to a GitHub Container Registry
+  default: true
+  when: "{{ releases }}"
+
+imagename:
+  type: str
+  help: The name of the Docker image
+  default: "devcontainers/{{ containername }}"
+  when: "{{ registry }}"
+
+# Configuration
+
+_subdirectory: src
+_answers_file: .copier-answers.yaml

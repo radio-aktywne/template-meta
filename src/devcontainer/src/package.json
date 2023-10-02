@@ -1,0 +1,12 @@
+{
+  "name": "devcontainer",
+  "scripts": {
+    "update": "ncu --peer --upgrade",
+    "postupdate": "npm install --no-audit --no-fund",
+    "dev": "devcontainer"
+  },
+  "dependencies": {
+    "@devcontainers/cli": "^0.51.3",
+    "npm-check-updates": "^16.14.4"
+  }
+}
