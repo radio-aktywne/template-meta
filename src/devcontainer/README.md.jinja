@@ -1,0 +1,32 @@
+<h1 align="center">{{ reponame }}</h1>
+
+<div align="center">
+
+{{ description }}
+
+[![Lint]({{ repourl }}/actions/workflows/lint.yaml/badge.svg)]({{ repourl }}/actions/workflows/lint.yaml)
+[![Test]({{ repourl }}/actions/workflows/test.yaml/badge.svg)]({{ repourl }}/actions/workflows/test.yaml)
+
+</div>
+
+---
+
+## 💡 About
+
+This repository contains a [`copier`](https://copier.readthedocs.io) template
+that can be used to create devcontainers for
+[`{{ accountname }}`](https://github.com/{{ accountname }}).
+
+## 📜 Usage
+
+To create a new project from this template in the current directory,
+make sure you have [`copier`](https://copier.readthedocs.io) installed and run:
+
+```sh
+copier gh:{{ accountname }}/{{ reponame }} .
+```
+
+## 💻 Development
+
+Read more about how to develop the project
+[here]({{ repourl }}/blob/main/CONTRIBUTING.md).
