@@ -1,5 +1,0 @@
-# Enable all rules by default
-enable=all
-
-# Enable sourcing of other files in the same directory
-source-path=SCRIPTDIR

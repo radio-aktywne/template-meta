@@ -40,6 +40,7 @@
         {%- endif %}
         nil = pkgs.nil;
         task = pkgs.go-task;
+        coreutils = pkgs.coreutils;
         trunk = pkgs.trunk-io;
         copier = pkgs.copier;
       in {
@@ -70,6 +71,7 @@
               {%- endif %}
               nil
               task
+              coreutils
               trunk
               copier
             ];
@@ -80,6 +82,7 @@
 
             packages = [
               task
+              coreutils
               copier
             ];
           };
@@ -92,6 +95,7 @@
               node
               {%- endif %}
               task
+              coreutils
               trunk
             ];
           };
@@ -103,6 +107,7 @@
             packages = [
               node
               task
+              coreutils
             ];
           };
           {%- endif %}
