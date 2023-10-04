@@ -15,7 +15,7 @@ concurrency:
   push:
     branches:
       - main
-    # Run only if there are changes in docs/ or workflow file
+    # Run only on changes to relevant files
     paths:
       - ".github/workflows/docs.yaml"
       - "docs/**"
