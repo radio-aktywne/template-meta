@@ -6,7 +6,6 @@ type:
   help: The type of the template
   choices:
     - app
-    - devcontainer
     - generic
     - package
   default: generic
@@ -30,8 +29,6 @@ reponame:
   default: |-
     {%- if type == "app" -%}
       template-app-{{ templatename }}
-    {%- elif type == "devcontainer" -%}
-      template-{{ templatename }}
     {% elif type == "generic" -%}
       template-{{ templatename }}
     {%- elif type == "package" -%}
