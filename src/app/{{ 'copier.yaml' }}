@@ -54,7 +54,7 @@ registry:
 imagename:
   type: str
   help: The name of the Docker image
-  default: "apps/{{ containername }}"
+  default: "apps/{{ appname }}"
   when: "{{ registry }}"
 
 # Configuration
