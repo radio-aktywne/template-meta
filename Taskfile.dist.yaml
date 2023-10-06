@@ -36,13 +36,13 @@ tasks:
         --recursive
         --force
         {{ .CLI_ARGS }}
-        ./build
+        build
     status:
       - >
         test
         '!'
         -d
-        ./build
+        build
   shallow-build:
     desc: Build the project without initializing git
     internal: true
@@ -80,7 +80,7 @@ tasks:
         'description=Example template'
         {{ .CLI_ARGS }}
         .
-        ./build
+        build
   init-build:
     desc: Initialize git in the build directory
     internal: true
@@ -110,7 +110,7 @@ tasks:
       - >
         test
         -d
-        ./.git
+        .git
   add-build-changes:
     desc: Add build changes to git
     internal: true
