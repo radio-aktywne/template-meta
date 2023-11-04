@@ -13,7 +13,7 @@ runtimes:
     - go@1.21.0
     # Needed for markdownlint, prettier, svgo
     - node@20.8.0
-    # Needed for black, isort, ruff, yamllint
+    # Needed for black, ruff, yamllint
     - python@3.11.1
 lint:
   ignore:
@@ -69,8 +69,6 @@ lint:
     - git-diff-check
     # Check for secrets in the code
     - gitleaks@8.18.0
-    # Python import sorting
-    - isort@5.12.0
     # Markdown linting
     - markdownlint@0.31.1
     # Nix formatting check
