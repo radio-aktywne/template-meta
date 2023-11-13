@@ -25,7 +25,6 @@ lint:
     # Nix formatting check (local)
     - name: nix-fmt-check
       files: [nix]
-      run_when: [ci, cli]
       commands:
         - output: pass_fail
           read_output_from: stderr
@@ -43,7 +42,6 @@ lint:
     # Nix flake check (local)
     - name: nix-flake-check
       files: [nix]
-      run_when: [ci, cli]
       commands:
         - output: pass_fail
           target: .
