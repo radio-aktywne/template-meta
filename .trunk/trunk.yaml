@@ -1,4 +1,3 @@
----
 version: 0.1
 cli:
   version: 1.17.1
@@ -44,7 +43,7 @@ lint:
       files: [nix]
       commands:
         - output: pass_fail
-          target: .
+          target: ./
           read_output_from: stderr
           run: >-
             nix
@@ -73,7 +72,7 @@ lint:
     - nix-fmt-check@SYSTEM
     # Nix flake check
     - nix-flake-check@SYSTEM
-    # JSON, YAML, Markdown formatting
+    # JS, JSON, YAML, Markdown formatting
     - prettier@3.0.2
     # Python linting
     - ruff@0.1.4

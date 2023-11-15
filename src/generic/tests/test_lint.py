@@ -42,7 +42,7 @@ def copied_template_directory(
     )
 
     with SandboxedGitRepo(tmp_path):
-        local.cmd.git("add", ".")
+        local.cmd.git("add", "./")
         local.cmd.git("commit", "--message", "Initial commit")
         yield tmp_path
 
@@ -53,7 +53,7 @@ def test_lint(copied_template_directory: Path) -> None:
     with CWD(copied_template_directory):
         local.cmd.nix(
             "develop",
-            ".#lint",
+            "./#lint",
             "--command",
             "--",
             "task",
