@@ -8,6 +8,7 @@ type:
     - database
     - generic
     - package
+    - service
   default: generic
 
 accountname:
@@ -35,6 +36,8 @@ reponame:
       template-{{ templatename }}
     {%- elif type == "package" -%}
       template-package-{{ templatename }}
+    {%- elif type == "service" -%}
+      template-service-{{ templatename }}
     {%- endif %}
 
 repourl:
