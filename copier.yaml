@@ -20,10 +20,6 @@ templatename:
   type: str
   help: The name of the template
 
-description:
-  type: str
-  help: A short description of the template
-
 reponame:
   type: str
   help: The name of the repository
@@ -44,6 +40,10 @@ repourl:
   type: str
   help: The URL of the repository
   default: "https://github.com/{{ accountname }}/{{ reponame }}"
+
+description:
+  type: str
+  help: A short description of the template
 
 # Configuration
 
