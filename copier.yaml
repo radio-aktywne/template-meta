@@ -13,7 +13,7 @@ type:
 
 accountname:
   type: str
-  help: The name of the organization on GitHub
+  help: The name of the account on GitHub
   default: radio-aktywne
 
 templatename:
