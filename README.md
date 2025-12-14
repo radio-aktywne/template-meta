@@ -14,8 +14,7 @@ Template for templates 🧶
 ## 💡 About
 
 This repository contains a [`copier`](https://copier.readthedocs.io) template
-that can be used to create other templates for
-[`radio-aktywne`](https://github.com/radio-aktywne) projects.
+that can be used to create other templates.
 
 ## 📜 Usage
 
